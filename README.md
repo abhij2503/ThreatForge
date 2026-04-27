@@ -9,6 +9,7 @@ LLM-powered pipeline that takes a CVE URL and generates a Splunk detection rule 
 
 ## Example
 **Input:** `https://cvedb.shodan.io/cve/CVE-2026-2370`
+
 **Output:** see [splunk_cve_rules.txt](splunk_cve_rules.txt)
 
 ## Setup
