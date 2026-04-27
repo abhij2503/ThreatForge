@@ -1,0 +1,1 @@
+index=* sourcetype=gitlab:audit OR sourcetype=gitlab:api OR sourcetype=gitlab:application (jira OR "jira_connect" OR "jira_dvcs" OR "atlassian_connect") (install* OR credential* OR token* OR secret* OR impersonat*) | stats count by user, action, target_type, target_id, src_ip | where count > 0
